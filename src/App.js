@@ -14,6 +14,7 @@ import Question4 from './components/Question4'
 import Question5 from './components/Question5'
 import Question6 from './components/Question6'
 import Question7 from './components/Question7'
+import Question8 from './components/Question8'
 import DonaldTrump from './components/DonaldTrump'
 
 const MainContainer = styled.div`
@@ -53,6 +54,9 @@ function App() {
           </Route>
           <Route path="/pgcr/question7">
             <Question7 />
+          </Route>
+          <Route path="/pgcr/question8">
+            <Question8 />
           </Route>
           <Route path="/pgcr/donald-trump">
             <DonaldTrump />

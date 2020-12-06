@@ -12,7 +12,7 @@ export default function DonaldTrump() {
 
   return (
     <StartContainer>
-      <Title>Ahah ! Nous vous avons démasqué Donald Trump !</Title>
+      <Title>Ahah ! Nous vous t'avons démasqué Donald Trump !</Title>
       <DescriptionContainer>
         <StartButton onClick={goToNextPage}>Retour à l'accueil</StartButton>
       </DescriptionContainer>
