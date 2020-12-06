@@ -7,7 +7,7 @@ export default function Start() {
   const history = useHistory();
 
   const goToNextPage = () => {
-    history.push("/question1");
+    history.push("/pgcr/question1");
   }
 
   return (

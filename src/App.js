@@ -33,28 +33,28 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/question1">
+          <Route path="/pgcr/question1">
             <Question1 />
           </Route>
-          <Route path="/question2">
+          <Route path="/pgcr/question2">
             <Question2 />
           </Route>
-          <Route path="/question3">
+          <Route path="/pgcr/question3">
             <Question3 />
           </Route>
-          <Route path="/question4">
+          <Route path="/pgcr/question4">
             <Question4 />
           </Route>
-          <Route path="/question5">
+          <Route path="/pgcr/question5">
             <Question5 />
           </Route>
-          <Route path="/question6">
+          <Route path="/pgcr/question6">
             <Question6 />
           </Route>
-          <Route path="/question7">
+          <Route path="/pgcr/question7">
             <Question7 />
           </Route>
-          <Route path="/donald-trump">
+          <Route path="/pgcr/donald-trump">
             <DonaldTrump />
           </Route>
           <Route path="/">

@@ -7,7 +7,7 @@ export default function DonaldTrump() {
   const history = useHistory();
 
   const goToNextPage = () => {
-    history.replace("/");
+    history.replace("/pgcr/");
   }
 
   return (

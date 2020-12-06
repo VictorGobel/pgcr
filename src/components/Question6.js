@@ -7,11 +7,11 @@ export default function Question6() {
   const history = useHistory();
 
   const goToNextPage = () => {
-    history.replace("/question7");
+    history.replace("/pgcr/question7");
   }
 
   const goToErrorPage = () => {
-    history.replace("/donald-trump");
+    history.replace("/pgcr/donald-trump");
   }
 
   return (
