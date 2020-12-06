@@ -17,7 +17,6 @@ import Question7 from './components/Question7'
 import DonaldTrump from './components/DonaldTrump'
 
 const MainContainer = styled.div`
-  font-family: 'Roboto';
   color: white;
   background-color: #282c34;
   height: 100vh;
