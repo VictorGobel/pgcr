@@ -82,6 +82,7 @@ const DescriptionContainer = styled.div`
 
 const Title = styled.div`
 font-size: 30px;
+text-align: center;
 text-shadow: 5px 5px black;
 animation: wtf 5s linear infinite;
 /* animation: float 4s ease-in-out infinite; */
@@ -148,5 +149,9 @@ const StartContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 160px;
+  margin: 160px;
+
+  @media (max-width: 800px) {
+    margin: 30px 15px;
+  }
 `
