@@ -1,26 +1,66 @@
 import styled from 'styled-components'
 import {Link} from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 
-export default function Question2() {
+export default function Vaccin() {
   const history = useHistory();
+  const [pression, setPression] = useState('0.1');
+  const [temp, setTemp] = useState('0.2');
+  const [delta, setDelta] = useState('0.3');
+  const [germes, setGerme] = useState('0.4');
 
   const goToNextPage = () => {
-    history.replace("/pgcr/question3");
+    history.replace("/pgcr/fin");
   }
 
-  const goToErrorPage = () => {
-    history.replace("/pgcr/donald-trump");
+  const notify = () => toast.dark('Hmmm, quelque chose semble étrange.', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
+
+  const validate = () => {
+    if(
+        (pression === '0.1' || pression === '0,1') &&
+        (temp === '0.2' || temp === '0,2') &&
+        (delta === '0.3' || delta === '0,3') &&
+        (germes === '0.4' || germes === '0,4')
+      ) {
+      goToNextPage();
+    } else {
+      notify();
+    }
   }
 
   return (
     <QuestionContainer>
-      <Title>Est-tu Donald Trump ?</Title>
+      <Title>Nous vous faisons confiance</Title>
       <AnswerContainer>
-        <Answer onClick={goToErrorPage}>Oui</Answer>
-        <Answer onClick={goToNextPage}>Non</Answer>
+        <AnswerInputContainer>
+          Pression
+          <AnswerInput minLength="0" maxLength="16" value={pression} onInput={e => setPression(e.target.value)} />
+        </AnswerInputContainer>
+        <AnswerInputContainer>
+          Temperature
+          <AnswerInput minLength="0" maxLength="16" value={temp} onInput={e => setTemp(e.target.value)} />
+        </AnswerInputContainer>
+        <AnswerInputContainer>
+          Delta t
+          <AnswerInput minLength="0" maxLength="16" value={delta} onInput={e => setDelta(e.target.value)} />
+        </AnswerInputContainer>
+        <AnswerInputContainer>
+          n_germes
+          <AnswerInput minLength="0" maxLength="16" value={germes} onInput={e => setGerme(e.target.value)} />
+        </AnswerInputContainer>
       </AnswerContainer>
+      <ValidateButton onClick={validate}>Valider</ValidateButton>
     </QuestionContainer>
   );
 }
@@ -38,11 +78,11 @@ const colorGreen1 = '#c9ffb8';
 const colorGreen2 = '#83ff5b';
 
 
-const Answer = styled.div`
+const ValidateButton = styled.div`
   position: relative;
   font-size: 24px;
   text-shadow: 5px 5px black;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
   cursor: pointer;
   color: ${colorBlue1};
@@ -74,19 +114,44 @@ const Answer = styled.div`
 const AnswerContainer = styled.div`
   margin-top: 40px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+`
+
+const AnswerInputContainer = styled.div`
+  margin: 40px 25px 0;
+  text-align: center;
+`
+
+const AnswerInput = styled.input`
+  height: 30px;
+  width: 150px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  border-bottom: 1px solid grey;
+  text-shadow: 5px 5px black;
+  background: none;
+  margin: 10px 0 0;
+  padding: 10px 10px 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  font-size: 20px;
 `
 
 const Title = styled.div`
 font-size: 30px;
 text-align: center;
+text-align: center;
 text-shadow: 5px 5px black;
 /* animation: float 4s ease-in-out infinite; */
 /* animation: scale 4s ease-in-out infinite; */
-/* animation: rotate 4s linear infinite; */
-animation: shadow 2.5s ease-in-out infinite;
+animation: rotate 4s linear infinite;
+/* animation: shadow 2.5s ease-in-out infinite; */
 
 @keyframes shadow {
 	0% {

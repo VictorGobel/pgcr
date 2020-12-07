@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { useState } from 'react';
 
 
-export default function Question8() {
+export default function Question8Sudoku() {
   const history = useHistory();
   const [input, setInput] = useState('');
 
@@ -78,11 +78,11 @@ const ConfirmButton = styled.div`
   margin-top: 40px;
   text-align: center;
   cursor: pointer;
-  color: ${colorBlue1};
+  color: ${colorYellow1};
   text-decoration: none;
 
   &:hover {
-    color: ${colorBlue2};
+    color: ${colorYellow2};
   }
 
   &:before {
@@ -92,7 +92,7 @@ const ConfirmButton = styled.div`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: ${colorBlue2};
+    background-color: ${colorYellow2};
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -180,8 +180,8 @@ font-size: 30px;
 text-align: center;
 text-shadow: 5px 5px black;
 /* animation: float 4s ease-in-out infinite; */
-/* animation: scale 4s ease-in-out infinite; */
-animation: rotate 4s linear infinite;
+animation: scale 4s ease-in-out infinite;
+/* animation: rotate 4s linear infinite; */
 /* animation: shadow 2.5s ease-in-out infinite; */
 
 @keyframes shadow {
@@ -242,6 +242,7 @@ const QuestionContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 160px;
+  z-index: 1;
 
   @media (max-width: 800px) {
     margin: 30px 15px;

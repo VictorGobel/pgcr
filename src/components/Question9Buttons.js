@@ -3,11 +3,11 @@ import {Link} from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 
-export default function Question1() {
+export default function Question9Buttons() {
   const history = useHistory();
 
   const goToNextPage = () => {
-    history.replace("/pgcr/question2");
+    history.replace("/pgcr/question10");
   }
 
   const goToErrorPage = () => {
@@ -16,12 +16,39 @@ export default function Question1() {
 
   return (
     <QuestionContainer>
-      <Title>Combien vaut 2+2 ?</Title>
+      <Title>Clique sur le bon bouton</Title>
       <AnswerContainer>
-        <Answer onClick={goToErrorPage}>Dix-sept</Answer>
-        <Answer onClick={goToErrorPage}>La couleur bleue</Answer>
-        <Answer onClick={goToNextPage}>Quatre</Answer>
-        <Answer onClick={goToErrorPage}>Donald Trump est un président génial !</Answer>
+        <Answer onClick={goToErrorPage}>Votez Trump</Answer>
+        <Answer onClick={goToErrorPage}>Donald forever</Answer>
+        <Answer onClick={goToErrorPage}>Best words</Answer>
+        <Answer onClick={goToErrorPage}>Fake news</Answer>
+        <Answer onClick={goToErrorPage}>Vive Trump</Answer>
+        <Answer onClick={goToErrorPage}>Grab them</Answer>
+        <Answer onClick={goToErrorPage}>Climate hoax</Answer>
+        <Answer onClick={goToErrorPage}>Guns</Answer>
+        <Answer onClick={goToErrorPage}>USA great again</Answer>
+        <Answer onClick={goToErrorPage}>Best words</Answer>
+        <Answer onClick={goToErrorPage}>Donald forever</Answer>
+        <Answer onClick={goToErrorPage}>Climate hoax</Answer>
+        <Answer onClick={goToErrorPage}>Texas</Answer>
+        <Answer onClick={goToErrorPage}>Vive Trump</Answer>
+        <Answer onClick={goToErrorPage}>Fake news</Answer>
+        <Answer onClick={goToErrorPage}>USA great again</Answer>
+        <Answer onClick={goToErrorPage}>Votez Trump</Answer>
+        <Answer onClick={goToNextPage} className="correct">Bon bouton</Answer>
+        <Answer onClick={goToErrorPage}>Texas</Answer>
+        <Answer onClick={goToErrorPage}>Guns</Answer>
+        <Answer onClick={goToErrorPage}>Grab them</Answer>
+        <Answer onClick={goToErrorPage}>USA great again</Answer>
+        <Answer onClick={goToErrorPage}>Climate hoax</Answer>
+        <Answer onClick={goToErrorPage}>Guns</Answer>
+        <Answer onClick={goToErrorPage}>Donald forever</Answer>
+        <Answer onClick={goToErrorPage}>Vive Trump</Answer>
+        <Answer onClick={goToErrorPage}>Best words</Answer>
+        <Answer onClick={goToErrorPage}>Texas</Answer>
+        <Answer onClick={goToErrorPage}>Votez Trump</Answer>
+        <Answer onClick={goToErrorPage}>Grab them</Answer>
+        <Answer onClick={goToErrorPage}>Fake news</Answer>
       </AnswerContainer>
     </QuestionContainer>
   );
@@ -44,14 +71,26 @@ const Answer = styled.div`
   position: relative;
   font-size: 24px;
   text-shadow: 5px 5px black;
-  margin-top: 20px;
+  margin: 20px 30px;
   text-align: center;
   cursor: pointer;
   color: ${colorRed1};
   text-decoration: none;
 
+  &.correct {
+    color: ${colorBlue1};
+
+    &:before {
+      background-color: ${colorBlue2};
+    }
+  }
+
   &:hover {
     color: ${colorRed2};
+
+    &.correct {
+      color: ${colorBlue2};
+    }
   }
 
   &:before {
@@ -76,14 +115,14 @@ const Answer = styled.div`
 const AnswerContainer = styled.div`
   margin-top: 40px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 `
 
 const Title = styled.div`
 font-size: 30px;
-text-align: center;
 text-align: center;
 text-shadow: 5px 5px black;
 animation: float 4s ease-in-out infinite;

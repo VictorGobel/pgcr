@@ -3,11 +3,11 @@ import {Link} from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 
-export default function Question1() {
+export default function Question13() {
   const history = useHistory();
 
   const goToNextPage = () => {
-    history.replace("/pgcr/question2");
+    history.replace("/pgcr/question14");
   }
 
   const goToErrorPage = () => {
@@ -16,12 +16,12 @@ export default function Question1() {
 
   return (
     <QuestionContainer>
-      <Title>Combien vaut 2+2 ?</Title>
+      <Title>Que choisirai Marion dans la liste suivante ? </Title>
       <AnswerContainer>
-        <Answer onClick={goToErrorPage}>Dix-sept</Answer>
-        <Answer onClick={goToErrorPage}>La couleur bleue</Answer>
-        <Answer onClick={goToNextPage}>Quatre</Answer>
-        <Answer onClick={goToErrorPage}>Donald Trump est un président génial !</Answer>
+        <Answer onClick={goToErrorPage}>Emeraude</Answer>
+        <Answer onClick={goToNextPage}>Grenat</Answer>
+        <Answer onClick={goToErrorPage}>Moldavite</Answer>
+        <Answer onClick={goToErrorPage}>Jade</Answer>
       </AnswerContainer>
     </QuestionContainer>
   );
@@ -47,11 +47,11 @@ const Answer = styled.div`
   margin-top: 20px;
   text-align: center;
   cursor: pointer;
-  color: ${colorRed1};
+  color: ${colorGreen1};
   text-decoration: none;
 
   &:hover {
-    color: ${colorRed2};
+    color: ${colorGreen2};
   }
 
   &:before {
@@ -61,7 +61,7 @@ const Answer = styled.div`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: ${colorRed2};
+    background-color: ${colorGreen2};
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;

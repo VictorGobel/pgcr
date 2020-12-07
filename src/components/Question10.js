@@ -3,11 +3,11 @@ import {Link} from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 
-export default function Question1() {
+export default function Question7() {
   const history = useHistory();
 
   const goToNextPage = () => {
-    history.replace("/pgcr/question2");
+    history.replace("/pgcr/start-marion");
   }
 
   const goToErrorPage = () => {
@@ -16,12 +16,12 @@ export default function Question1() {
 
   return (
     <QuestionContainer>
-      <Title>Combien vaut 2+2 ?</Title>
+      <Title>Quelle est la couleur du cheval blanc d’Henri IV ?</Title>
       <AnswerContainer>
-        <Answer onClick={goToErrorPage}>Dix-sept</Answer>
-        <Answer onClick={goToErrorPage}>La couleur bleue</Answer>
-        <Answer onClick={goToNextPage}>Quatre</Answer>
-        <Answer onClick={goToErrorPage}>Donald Trump est un président génial !</Answer>
+        <Answer onClick={goToErrorPage}>Couleur</Answer>
+        <Answer onClick={goToErrorPage}>Cheval</Answer>
+        <Answer onClick={goToNextPage}>Blanc</Answer>
+        <Answer onClick={goToErrorPage}>Henri</Answer>
       </AnswerContainer>
     </QuestionContainer>
   );
@@ -47,11 +47,11 @@ const Answer = styled.div`
   margin-top: 20px;
   text-align: center;
   cursor: pointer;
-  color: ${colorRed1};
+  color: white;
   text-decoration: none;
 
   &:hover {
-    color: ${colorRed2};
+    color: white;
   }
 
   &:before {
@@ -61,7 +61,7 @@ const Answer = styled.div`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: ${colorRed2};
+    background-color: white;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -84,11 +84,10 @@ const AnswerContainer = styled.div`
 const Title = styled.div`
 font-size: 30px;
 text-align: center;
-text-align: center;
 text-shadow: 5px 5px black;
-animation: float 4s ease-in-out infinite;
+/* animation: float 4s ease-in-out infinite; */
 /* animation: scale 4s ease-in-out infinite; */
-/* animation: rotate 4s linear infinite; */
+animation: rotate 4s linear infinite;
 /* animation: shadow 2.5s ease-in-out infinite; */
 
 @keyframes shadow {

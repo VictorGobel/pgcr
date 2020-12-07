@@ -25,7 +25,7 @@ export default function Start() {
           ses recherches et que le vaccin que vous nous envoyez n'est pas frauduleux. 
 
         </Description>
-        <StartButton onClick={goToNextPage}>Commencer le test</StartButton>
+        <StartButton onClick={goToNextPage}>Commencer le premier test</StartButton>
       </DescriptionContainer>
     </StartContainer>
   );
@@ -161,6 +161,7 @@ const StartContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 160px;
+  z-index: 1;
 
   @media (max-width: 800px) {
     margin: 30px 15px;

@@ -3,27 +3,24 @@ import {Link} from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 
-export default function Question1() {
+export default function Start() {
   const history = useHistory();
 
   const goToNextPage = () => {
-    history.replace("/pgcr/question2");
-  }
-
-  const goToErrorPage = () => {
-    history.replace("/pgcr/donald-trump");
+    history.push("/pgcr/question11");
   }
 
   return (
-    <QuestionContainer>
-      <Title>Combien vaut 2+2 ?</Title>
-      <AnswerContainer>
-        <Answer onClick={goToErrorPage}>Dix-sept</Answer>
-        <Answer onClick={goToErrorPage}>La couleur bleue</Answer>
-        <Answer onClick={goToNextPage}>Quatre</Answer>
-        <Answer onClick={goToErrorPage}>Donald Trump est un président génial !</Answer>
-      </AnswerContainer>
-    </QuestionContainer>
+    <StartContainer>
+      <Title>Bravo !</Title>
+      <DescriptionContainer>
+        <Description>
+          Vous venez de finir le test de QI chargé de piéger Trump<br /><br />
+          Nous pouvons maintenant passer au vrai test : vérifier votre connaissance sur les travaux du Pr Camard <br />
+        </Description>
+        <StartButton onClick={goToNextPage}>Commencer le test</StartButton>
+      </DescriptionContainer>
+    </StartContainer>
   );
 }
 
@@ -39,19 +36,19 @@ const colorYellow2 = '#fffa64';
 const colorGreen1 = '#c9ffb8';
 const colorGreen2 = '#83ff5b';
 
-
-const Answer = styled.div`
+const StartButton = styled.div`
   position: relative;
-  font-size: 24px;
+  font-size: 26px;
   text-shadow: 5px 5px black;
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
   cursor: pointer;
-  color: ${colorRed1};
+  color: inherit;
   text-decoration: none;
+  color: ${colorYellow1};
 
   &:hover {
-    color: ${colorRed2};
+    color: ${colorYellow2};
   }
 
   &:before {
@@ -61,10 +58,11 @@ const Answer = styled.div`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: ${colorRed2};
+    background-color: ${colorYellow2};
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
+    color: #ffb8b8;
   }
 
   &:hover:before {
@@ -72,8 +70,13 @@ const Answer = styled.div`
     transform: scaleX(1);
   }
 `
+const Description = styled.div`
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 3px 3px #ff000036;
+`
 
-const AnswerContainer = styled.div`
+const DescriptionContainer = styled.div`
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -84,22 +87,24 @@ const AnswerContainer = styled.div`
 const Title = styled.div`
 font-size: 30px;
 text-align: center;
-text-align: center;
 text-shadow: 5px 5px black;
-animation: float 4s ease-in-out infinite;
+animation: wtf 5s linear infinite;
+/* animation: float 4s ease-in-out infinite; */
 /* animation: scale 4s ease-in-out infinite; */
 /* animation: rotate 4s linear infinite; */
-/* animation: shadow 2.5s ease-in-out infinite; */
 
-@keyframes shadow {
+@keyframes wtf {
 	0% {
-		text-shadow: 0px 0px black, 0px 0px black, 0px 0px black, 0px 0px black, 0px 0px black, 0px 0px black;
-	}
-	50% {
-		text-shadow: 0px 60px 7px black, 0px -60px 7px black, 60px 0px 7px black, -60px 0px 7px black, 30px 30px 7px black, -30px 30px 7px black, 30px -30px 7px black, -30px -30px 7px black;
+    transform: scale(1) rotateZ(0deg);
+  }
+	10% {
+    transform: scale(1) rotateZ(360deg);
+  }
+	20% {
+    transform: scale(1.3) rotateZ(2160deg);
 	}
 	100% {
-		text-shadow: 0px 0px black, 0px 0px black, 0px 0px black, 0px 0px black, 0px 0px black, 0px 0px black;
+    transform: scale(1) rotateZ(2160deg);
 	}
 }
 
@@ -143,7 +148,7 @@ animation: float 4s ease-in-out infinite;
 }
 `
 
-const QuestionContainer = styled.div`
+const StartContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

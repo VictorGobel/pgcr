@@ -3,11 +3,11 @@ import {Link} from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 
-export default function Question1() {
+export default function Question12() {
   const history = useHistory();
 
   const goToNextPage = () => {
-    history.replace("/pgcr/question2");
+    history.replace("/pgcr/question13");
   }
 
   const goToErrorPage = () => {
@@ -16,12 +16,12 @@ export default function Question1() {
 
   return (
     <QuestionContainer>
-      <Title>Combien vaut 2+2 ?</Title>
+      <Title>Je suis Shérif, que dois-je faire ?</Title>
       <AnswerContainer>
-        <Answer onClick={goToErrorPage}>Dix-sept</Answer>
-        <Answer onClick={goToErrorPage}>La couleur bleue</Answer>
-        <Answer onClick={goToNextPage}>Quatre</Answer>
-        <Answer onClick={goToErrorPage}>Donald Trump est un président génial !</Answer>
+        <Answer onClick={goToNextPage}>Tuer mon adjoint</Answer>
+        <Answer onClick={goToErrorPage}>Me faire passer pour le renégat</Answer>
+        <Answer onClick={goToErrorPage}>Garder toutes mes cartes en main</Answer>
+        <Answer onClick={goToErrorPage}>Passer mon tour</Answer>
       </AnswerContainer>
     </QuestionContainer>
   );
@@ -47,11 +47,11 @@ const Answer = styled.div`
   margin-top: 20px;
   text-align: center;
   cursor: pointer;
-  color: ${colorRed1};
+  color: ${colorYellow1};
   text-decoration: none;
 
   &:hover {
-    color: ${colorRed2};
+    color: ${colorYellow2};
   }
 
   &:before {
@@ -61,7 +61,7 @@ const Answer = styled.div`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: ${colorRed2};
+    background-color: ${colorYellow2};
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -86,10 +86,10 @@ font-size: 30px;
 text-align: center;
 text-align: center;
 text-shadow: 5px 5px black;
-animation: float 4s ease-in-out infinite;
+/* animation: float 4s ease-in-out infinite; */
 /* animation: scale 4s ease-in-out infinite; */
 /* animation: rotate 4s linear infinite; */
-/* animation: shadow 2.5s ease-in-out infinite; */
+animation: shadow 2.5s ease-in-out infinite;
 
 @keyframes shadow {
 	0% {

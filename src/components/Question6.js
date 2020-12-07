@@ -148,6 +148,7 @@ const QuestionContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 160px;
+  z-index: 1;
 
   @media (max-width: 800px) {
     margin: 30px 15px;

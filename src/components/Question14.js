@@ -3,11 +3,11 @@ import {Link} from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 
-export default function Question1() {
+export default function Question13() {
   const history = useHistory();
 
   const goToNextPage = () => {
-    history.replace("/pgcr/question2");
+    history.replace("/pgcr/question15");
   }
 
   const goToErrorPage = () => {
@@ -16,12 +16,12 @@ export default function Question1() {
 
   return (
     <QuestionContainer>
-      <Title>Combien vaut 2+2 ?</Title>
+      <Title>Quel fruit préfère elle ?</Title>
       <AnswerContainer>
-        <Answer onClick={goToErrorPage}>Dix-sept</Answer>
-        <Answer onClick={goToErrorPage}>La couleur bleue</Answer>
-        <Answer onClick={goToNextPage}>Quatre</Answer>
-        <Answer onClick={goToErrorPage}>Donald Trump est un président génial !</Answer>
+        <Answer onClick={goToErrorPage}>Les bananes</Answer>
+        <Answer onClick={goToErrorPage}>Les poires</Answer>
+        <Answer onClick={goToNextPage}>Les pommes</Answer>
+        <Answer onClick={goToErrorPage}>Les kiwis</Answer>
       </AnswerContainer>
     </QuestionContainer>
   );
@@ -86,8 +86,8 @@ font-size: 30px;
 text-align: center;
 text-align: center;
 text-shadow: 5px 5px black;
-animation: float 4s ease-in-out infinite;
-/* animation: scale 4s ease-in-out infinite; */
+/* animation: float 4s ease-in-out infinite; */
+animation: scale 4s ease-in-out infinite;
 /* animation: rotate 4s linear infinite; */
 /* animation: shadow 2.5s ease-in-out infinite; */
 

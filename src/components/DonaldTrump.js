@@ -12,7 +12,7 @@ export default function DonaldTrump() {
 
   return (
     <StartContainer>
-      <Title>Ahah ! Nous vous t'avons démasqué Donald Trump !</Title>
+      <Title>Ahah ! Nous t'avons démasqué Donald Trump !</Title>
       <DescriptionContainer>
         <StartButton onClick={goToNextPage}>Retour à l'accueil</StartButton>
       </DescriptionContainer>
@@ -150,6 +150,7 @@ const StartContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 160px;
+  z-index: 1;
 
   @media (max-width: 800px) {
     margin: 30px 15px;

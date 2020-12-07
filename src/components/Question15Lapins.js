@@ -1,28 +1,36 @@
 import styled from 'styled-components'
 import {Link} from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import { useState } from 'react';
 
 
-export default function Question1() {
+export default function Question15Lapins() {
   const history = useHistory();
+  const [input, setInput] = useState('');
 
   const goToNextPage = () => {
-    history.replace("/pgcr/question2");
+    history.replace("/pgcr/question16");
   }
 
   const goToErrorPage = () => {
     history.replace("/pgcr/donald-trump");
   }
 
+  const validate = () => {
+    if(input.toLowerCase() === 'les petits lapins' || input.toLowerCase() === 'petits lapins') {
+      goToNextPage();
+    } else if(input !== '') {
+      goToErrorPage();
+    }
+  }
+
   return (
     <QuestionContainer>
-      <Title>Combien vaut 2+2 ?</Title>
+      <Title>Qui s’est bien lavé ?</Title>
       <AnswerContainer>
-        <Answer onClick={goToErrorPage}>Dix-sept</Answer>
-        <Answer onClick={goToErrorPage}>La couleur bleue</Answer>
-        <Answer onClick={goToNextPage}>Quatre</Answer>
-        <Answer onClick={goToErrorPage}>Donald Trump est un président génial !</Answer>
+        <AnswerInput minLength="0" maxLength="30" value={input} onInput={e => setInput(e.target.value)} />
       </AnswerContainer>
+      <ValidateButton onClick={validate}>Valider</ValidateButton>
     </QuestionContainer>
   );
 }
@@ -40,18 +48,18 @@ const colorGreen1 = '#c9ffb8';
 const colorGreen2 = '#83ff5b';
 
 
-const Answer = styled.div`
+const ValidateButton = styled.div`
   position: relative;
   font-size: 24px;
   text-shadow: 5px 5px black;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
   cursor: pointer;
-  color: ${colorRed1};
+  color: ${colorBlue1};
   text-decoration: none;
 
   &:hover {
-    color: ${colorRed2};
+    color: ${colorBlue2};
   }
 
   &:before {
@@ -61,7 +69,7 @@ const Answer = styled.div`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: ${colorRed2};
+    background-color: ${colorBlue2};
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -75,10 +83,25 @@ const Answer = styled.div`
 
 const AnswerContainer = styled.div`
   margin-top: 40px;
+`
+
+const AnswerInput = styled.input`
+  margin-top: 40px;
+  height: 50px;
+  width: 300px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 1px solid grey;
+  text-shadow: 5px 5px black;
+  background: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  font-size: 20px;
+  text-align: center;
 `
 
 const Title = styled.div`
@@ -86,9 +109,9 @@ font-size: 30px;
 text-align: center;
 text-align: center;
 text-shadow: 5px 5px black;
-animation: float 4s ease-in-out infinite;
+/* animation: float 4s ease-in-out infinite; */
 /* animation: scale 4s ease-in-out infinite; */
-/* animation: rotate 4s linear infinite; */
+animation: rotate 4s linear infinite;
 /* animation: shadow 2.5s ease-in-out infinite; */
 
 @keyframes shadow {
