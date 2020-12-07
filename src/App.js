@@ -28,6 +28,7 @@ import Question15Lapins from './components/Question15Lapins'
 import Question16Redac from './components/Question16Redac'
 import Vaccin from './components/Vaccin'
 import DonaldTrump from './components/DonaldTrump'
+import MarionCamard from './components/MarionCamard'
 import End from './components/End'
 
 import Snow from './components/Snow'
@@ -103,6 +104,9 @@ function App() {
           </Route>
           <Route path="/pgcr/question16">
             <Question16Redac />
+          </Route>
+          <Route path="/pgcr/marion-camard">
+            <MarionCamard />
           </Route>
           <Route path="/pgcr/vaccin">
             <Vaccin />

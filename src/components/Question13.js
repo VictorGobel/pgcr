@@ -11,7 +11,7 @@ export default function Question13() {
   }
 
   const goToErrorPage = () => {
-    history.replace("/pgcr/donald-trump");
+    history.replace("/pgcr/marion-camard");
   }
 
   return (

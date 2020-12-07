@@ -13,7 +13,7 @@ export default function Question15Lapins() {
   }
 
   const goToErrorPage = () => {
-    history.replace("/pgcr/donald-trump");
+    history.replace("/pgcr/marion-camard");
   }
 
   const validate = () => {

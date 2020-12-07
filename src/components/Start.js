@@ -21,7 +21,7 @@ export default function Start() {
           ~ <br /><br />
           Pour cela nous allons vous faire passer deux tests. <br /><br />
           Le premier sera un test de QI (pour vérifier que vous n'êtes pas l'ignoble Donald Trump). <br /><br />
-          Le second sera un test sur les travaux du Pr. Camard, cela nous assurera que vous avez étudié avec parcimonie<br />
+          Le second sera un test sur les travaux du Pr. Camard. Cela nous assurera que vous avez étudié avec parcimonie<br />
           ses recherches et que le vaccin que vous nous envoyez n'est pas frauduleux. 
 
         </Description>
