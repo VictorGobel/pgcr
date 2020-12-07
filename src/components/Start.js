@@ -16,12 +16,12 @@ export default function Start() {
       <DescriptionContainer>
         <Description>
           Bienvenue sur le site internet du gouvernement. <br />
-          Tout d'abord félicitation pour avoir trouvé ce lien qui vous permettra de nous transmettre le vaccin au Covid19. <br />
+          Tout d'abord félicitations pour avoir trouvé ce lien qui vous permettra de nous transmettre le vaccin au Covid19. <br />
           Cependant nous voulons être sûr qu'il s'agit bien de vous et non d'une tierce personne. <br /><br />
           ~ <br /><br />
           Pour cela nous allons vous faire passer deux tests. <br /><br />
           Le premier sera un test de QI (pour vérifier que vous n'êtes pas l'ignoble Donald Trump). <br /><br />
-          Le second sera un test sur les travaux du Pr. Camard. Cela nous assurera que vous avez étudié avec parcimonie<br />
+          Le second sera un test sur les travaux du Pr. Camard. Cela nous assurera que vous avez étudié avec sérieux<br />
           ses recherches et que le vaccin que vous nous envoyez n'est pas frauduleux. 
 
         </Description>

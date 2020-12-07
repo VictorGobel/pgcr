@@ -10,11 +10,11 @@ export default function End() {
 
   return (
     <EndContainer>
-      <Title>Félicitation</Title>
+      <Title>Félicitations</Title>
       <DescriptionContainer>
         <Description>
           Bien joué ! Tu as réussi à sauver Noël en déjouant les plan du machiavélique Donald Trump. <br />
-          Le vaccins va pouvoir être fabriqué et Marion ne gagnera pas d'argent ! <br />
+          Le vaccin va pouvoir être fabriqué et Marion ne gagnera pas d'argent ! <br />
           Benjamin Pommier est fier de toi !
         </Description>
       </DescriptionContainer>
