@@ -9,7 +9,7 @@ export default function Question16Redac() {
   const history = useHistory();
   const [input, setInput] = useState('');
 
-  const notify = () => toast.dark('Il manque quelque chose...', {
+  const notify = () => toast.dark("Personellement j'aurai utilisé plus d'arguments...", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: true,

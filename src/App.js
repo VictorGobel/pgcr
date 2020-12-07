@@ -28,6 +28,7 @@ import Question15Lapins from './components/Question15Lapins'
 import Question16Redac from './components/Question16Redac'
 import Vaccin from './components/Vaccin'
 import DonaldTrump from './components/DonaldTrump'
+import End from './components/End'
 
 import Snow from './components/Snow'
 
@@ -35,7 +36,6 @@ const MainContainer = styled.div`
   color: white;
   background-color: #282c34;
   min-height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,6 +106,9 @@ function App() {
           </Route>
           <Route path="/pgcr/vaccin">
             <Vaccin />
+          </Route>
+          <Route path="/pgcr/fin">
+            <End />
           </Route>
           <Route path="/">
             <Start />
