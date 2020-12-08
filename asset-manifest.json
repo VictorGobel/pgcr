@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pgcr/static/css/main.99309490.chunk.css",
-    "main.js": "/pgcr/static/js/main.f67231cc.chunk.js",
-    "main.js.map": "/pgcr/static/js/main.f67231cc.chunk.js.map",
+    "main.css": "/pgcr/static/css/main.4fe095aa.chunk.css",
+    "main.js": "/pgcr/static/js/main.50592e44.chunk.js",
+    "main.js.map": "/pgcr/static/js/main.50592e44.chunk.js.map",
     "runtime-main.js": "/pgcr/static/js/runtime-main.058c7814.js",
     "runtime-main.js.map": "/pgcr/static/js/runtime-main.058c7814.js.map",
     "static/css/2.83342f34.chunk.css": "/pgcr/static/css/2.83342f34.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.452778ae.chunk.js.map": "/pgcr/static/js/3.452778ae.chunk.js.map",
     "index.html": "/pgcr/index.html",
     "static/css/2.83342f34.chunk.css.map": "/pgcr/static/css/2.83342f34.chunk.css.map",
-    "static/css/main.99309490.chunk.css.map": "/pgcr/static/css/main.99309490.chunk.css.map",
+    "static/css/main.4fe095aa.chunk.css.map": "/pgcr/static/css/main.4fe095aa.chunk.css.map",
     "static/js/2.e951ac89.chunk.js.LICENSE.txt": "/pgcr/static/js/2.e951ac89.chunk.js.LICENSE.txt",
     "static/media/index.css": "/pgcr/static/media/Roboto-Regular.03523cf5.ttf"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.058c7814.js",
     "static/css/2.83342f34.chunk.css",
     "static/js/2.e951ac89.chunk.js",
-    "static/css/main.99309490.chunk.css",
-    "static/js/main.f67231cc.chunk.js"
+    "static/css/main.4fe095aa.chunk.css",
+    "static/js/main.50592e44.chunk.js"
   ]
 }
