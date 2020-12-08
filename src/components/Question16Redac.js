@@ -9,7 +9,7 @@ export default function Question16Redac() {
   const history = useHistory();
   const [input, setInput] = useState('');
 
-  const notify = () => toast.dark("Personellement j'aurai utilisé plus d'arguments...", {
+  const notify = () => toast.dark("Personellement j'aurais utilisé plus d'arguments...", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: true,
@@ -33,7 +33,7 @@ export default function Question16Redac() {
 
   return (
     <QuestionContainer>
-      <Title>Penses tu que les compétences sont innées ou acquises ?</Title>
+      <Title>Penses-tu que les compétences sont innées ou acquises ?</Title>
       <AnswerContainer>
         <AnswerInput value={input} onInput={e => setInput(e.target.value)} />
       </AnswerContainer>

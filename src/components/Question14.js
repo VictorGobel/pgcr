@@ -16,7 +16,7 @@ export default function Question13() {
 
   return (
     <QuestionContainer>
-      <Title>Quel fruit préfère elle ?</Title>
+      <Title>Quel fruit préfère-t-elle ?</Title>
       <AnswerContainer>
         <Answer onClick={goToErrorPage}>Les bananes</Answer>
         <Answer onClick={goToErrorPage}>Les poires</Answer>

@@ -48,11 +48,11 @@ export default function Vaccin() {
           <AnswerInput minLength="0" maxLength="16" value={pression} onInput={e => setPression(e.target.value)} />
         </AnswerInputContainer>
         <AnswerInputContainer>
-          Temperature
+          Température
           <AnswerInput minLength="0" maxLength="16" value={temp} onInput={e => setTemp(e.target.value)} />
         </AnswerInputContainer>
         <AnswerInputContainer>
-          Delta t
+          \u0394 t
           <AnswerInput minLength="0" maxLength="16" value={delta} onInput={e => setDelta(e.target.value)} />
         </AnswerInputContainer>
         <AnswerInputContainer>

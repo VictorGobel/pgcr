@@ -16,7 +16,7 @@ export default function DonaldTrump() {
       <DescriptionContainer>
         <Description>
           Je pense que tu peux retourner étudier les travaux du Pr. Camard. <br />
-          Mais dépèche toi, le temps presse.
+          Mais dépêche toi, le temps presse.
         </Description>
         <StartButton onClick={goToNextPage}>Retourner au TOUT début</StartButton>
       </DescriptionContainer>

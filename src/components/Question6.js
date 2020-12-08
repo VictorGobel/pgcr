@@ -16,7 +16,7 @@ export default function Question6() {
 
   return (
     <QuestionContainer>
-      <Title>Si tu étais président des Etats-Unis, qu'est ce que tu tweeterais ?</Title>
+      <Title>Si tu étais président des Etats-Unis, qu'est-ce-que tu tweeterais ?</Title>
       <AnswerContainer>
         <Answer onClick={goToErrorPage}>The concept of global warming was created by and for the Chinese in order to make U.S. manufacturing non-competitive.</Answer>
         <Answer onClick={goToErrorPage}>Sorry losers and haters, but my I.Q. is one of the highest -and you all know it! Please don't feel so stupid or insecure,it's not your fault.</Answer>

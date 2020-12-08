@@ -16,9 +16,9 @@ export default function Question13() {
 
   return (
     <QuestionContainer>
-      <Title>Que choisirai Marion dans la liste suivante ? </Title>
+      <Title>Que choisirait Marion dans la liste suivante ? </Title>
       <AnswerContainer>
-        <Answer onClick={goToErrorPage}>Emeraude</Answer>
+        <Answer onClick={goToErrorPage}>Émeraude</Answer>
         <Answer onClick={goToNextPage}>Grenat</Answer>
         <Answer onClick={goToErrorPage}>Moldavite</Answer>
         <Answer onClick={goToErrorPage}>Jade</Answer>

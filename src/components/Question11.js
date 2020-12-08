@@ -18,8 +18,8 @@ export default function Question11() {
     <QuestionContainer>
       <Title>Une papule c'est bien quand ?</Title>
       <AnswerContainer>
-        <Answer onClick={goToErrorPage}>Y en a plein</Answer>
-        <Answer onClick={goToNextPage}>Y en a une</Answer>
+        <Answer onClick={goToNextPage}>Y en a plein</Answer>
+        <Answer onClick={goToErrorPage}>Y en a une</Answer>
         <Answer onClick={goToErrorPage}>Elles sont violettes</Answer>
         <Answer onClick={goToErrorPage}>Y a assez de laine pour les patricotter</Answer>
       </AnswerContainer>
