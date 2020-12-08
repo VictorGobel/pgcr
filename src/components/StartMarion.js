@@ -16,7 +16,7 @@ export default function Start() {
       <DescriptionContainer>
         <Description>
           Vous venez de finir le test de QI chargé de piéger Trump<br /><br />
-          Nous pouvons maintenant passer au vrai test : vérifier votre connaissance sur les travaux du Pr Camard <br />
+          Nous pouvons maintenant passer au vrai test : vérifier votre connaissance sur les travaux du Pr. Camard <br />
         </Description>
         <StartButton onClick={goToNextPage}>Commencer le test</StartButton>
       </DescriptionContainer>

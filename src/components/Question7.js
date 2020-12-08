@@ -16,7 +16,7 @@ export default function Question7() {
 
   return (
     <QuestionContainer>
-      <Title>Paris est la capital de quel pays ?</Title>
+      <Title>Paris est la capitale de quel pays ?</Title>
       <AnswerContainer>
         <Answer onClick={goToNextPage}>La France</Answer>
         <Answer onClick={goToErrorPage}>L'Allemagne</Answer>

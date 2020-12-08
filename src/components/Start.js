@@ -17,7 +17,7 @@ export default function Start() {
         <Description>
           Bienvenue sur le site internet du gouvernement. <br />
           Tout d'abord félicitations pour avoir trouvé ce lien qui vous permettra de nous transmettre le vaccin au Covid19. <br />
-          Cependant nous voulons être sûr qu'il s'agit bien de vous et non d'une tierce personne. <br /><br />
+          Cependant, nous voulons être sûr qu'il s'agit bien de vous et non d'une tierce personne. <br /><br />
           ~ <br /><br />
           Pour cela nous allons vous faire passer deux tests. <br /><br />
           Le premier sera un test de QI (pour vérifier que vous n'êtes pas l'ignoble Donald Trump). <br /><br />

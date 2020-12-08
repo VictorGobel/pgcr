@@ -21,7 +21,7 @@ export default function Question5() {
         <Answer onClick={goToErrorPage}>Boire de la javel</Answer>
         <Answer onClick={goToNextPage}>Rester chez moi</Answer>
         <Answer onClick={goToErrorPage}>Serrer la main de plein de gens</Answer>
-        <Answer onClick={goToErrorPage}>Se dire que c'est juste un petit rhûme</Answer>
+        <Answer onClick={goToErrorPage}>Se dire que c'est juste un petit rhume</Answer>
       </AnswerContainer>
     </QuestionContainer>
   );
