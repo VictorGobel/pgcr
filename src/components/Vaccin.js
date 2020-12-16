@@ -7,10 +7,10 @@ import { toast } from 'react-toastify';
 
 export default function Vaccin() {
   const history = useHistory();
-  const [pression, setPression] = useState('0.1');
-  const [temp, setTemp] = useState('0.2');
-  const [delta, setDelta] = useState('0.3');
-  const [germes, setGerme] = useState('0.4');
+  const [pression, setPression] = useState('');
+  const [temp, setTemp] = useState('');
+  const [delta, setDelta] = useState('');
+  const [germes, setGerme] = useState('');
 
   const goToNextPage = () => {
     history.replace("/pgcr/fin");
@@ -28,10 +28,10 @@ export default function Vaccin() {
 
   const validate = () => {
     if(
-        (pression === '0.1' || pression === '0,1') &&
-        (temp === '0.2' || temp === '0,2') &&
-        (delta === '0.3' || delta === '0,3') &&
-        (germes === '0.4' || germes === '0,4')
+        (pression === '62' || pression === '59') &&
+        (temp === '92') &&
+        (delta === '1457') &&
+        (germes === '0.00008' || germes === '0,00008')
       ) {
       goToNextPage();
     } else {
@@ -44,19 +44,19 @@ export default function Vaccin() {
       <Title>Nous vous faisons confiance</Title>
       <AnswerContainer>
         <AnswerInputContainer>
-          Pression
+          Pression (Pa)
           <AnswerInput minLength="0" maxLength="16" value={pression} onInput={e => setPression(e.target.value)} />
         </AnswerInputContainer>
         <AnswerInputContainer>
-          Température
+          Température (°C)
           <AnswerInput minLength="0" maxLength="16" value={temp} onInput={e => setTemp(e.target.value)} />
         </AnswerInputContainer>
         <AnswerInputContainer>
-          \u0394 t
+          Δt (s)
           <AnswerInput minLength="0" maxLength="16" value={delta} onInput={e => setDelta(e.target.value)} />
         </AnswerInputContainer>
         <AnswerInputContainer>
-          n_germes
+          n_germes (mol)
           <AnswerInput minLength="0" maxLength="16" value={germes} onInput={e => setGerme(e.target.value)} />
         </AnswerInputContainer>
       </AnswerContainer>
